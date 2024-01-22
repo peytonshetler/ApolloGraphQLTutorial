@@ -22,6 +22,12 @@
 		66F96FE229FB0A9600713B80 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F96FE129FB0A9600713B80 /* LoginViewModel.swift */; };
 		66F96FE829FC0D7700713B80 /* View+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F96FE729FC0D7700713B80 /* View+Alert.swift */; };
 		66F96FEA29FC183200713B80 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F96FE929FC183200713B80 /* NotificationView.swift */; };
+		79326DFA2B5F013100E7D87F /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 79326DF92B5F013000E7D87F /* Apollo */; };
+		79326DFC2B5F013100E7D87F /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 79326DFB2B5F013100E7D87F /* ApolloWebSocket */; };
+		79326E052B5F068A00E7D87F /* RocketReserverAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 79326E042B5F068A00E7D87F /* RocketReserverAPI */; };
+		79326E072B5F079F00E7D87F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79326E062B5F079F00E7D87F /* Network.swift */; };
+		79326E0B2B5F196900E7D87F /* AuthorizationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79326E0A2B5F196900E7D87F /* AuthorizationInterceptor.swift */; };
+		79326E0F2B5F1AEA00E7D87F /* NetworkInterceptorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79326E0E2B5F1AEA00E7D87F /* NetworkInterceptorProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,16 @@
 		66F96FE129FB0A9600713B80 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		66F96FE729FC0D7700713B80 /* View+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Alert.swift"; sourceTree = "<group>"; };
 		66F96FE929FC183200713B80 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		79326E012B5F059C00E7D87F /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
+		79326E032B5F063F00E7D87F /* RocketReserverAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RocketReserverAPI; sourceTree = "<group>"; };
+		79326E062B5F079F00E7D87F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		79326E082B5F115E00E7D87F /* LaunchDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchDetails.graphql; sourceTree = "<group>"; };
+		79326E092B5F176D00E7D87F /* Login.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Login.graphql; sourceTree = "<group>"; };
+		79326E0A2B5F196900E7D87F /* AuthorizationInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInterceptor.swift; sourceTree = "<group>"; };
+		79326E0E2B5F1AEA00E7D87F /* NetworkInterceptorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorProvider.swift; sourceTree = "<group>"; };
+		79326E102B5F209800E7D87F /* BookTrip.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = BookTrip.graphql; sourceTree = "<group>"; };
+		79326E142B5F219C00E7D87F /* CancelTrip.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = CancelTrip.graphql; sourceTree = "<group>"; };
+		79326E152B5F251000E7D87F /* TripsBooked.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = TripsBooked.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79326E052B5F068A00E7D87F /* RocketReserverAPI in Frameworks */,
 				66F96FD629FADBB700713B80 /* SDWebImageSwiftUI in Frameworks */,
+				79326DFC2B5F013100E7D87F /* ApolloWebSocket in Frameworks */,
+				79326DFA2B5F013100E7D87F /* Apollo in Frameworks */,
 				66F96FDA29FADCC800713B80 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +77,12 @@
 			isa = PBXGroup;
 			children = (
 				66EEA77F2A13C9AD00BB8C72 /* schema.graphqls */,
+				79326E012B5F059C00E7D87F /* LaunchList.graphql */,
+				79326E082B5F115E00E7D87F /* LaunchDetails.graphql */,
+				79326E092B5F176D00E7D87F /* Login.graphql */,
+				79326E102B5F209800E7D87F /* BookTrip.graphql */,
+				79326E142B5F219C00E7D87F /* CancelTrip.graphql */,
+				79326E152B5F251000E7D87F /* TripsBooked.graphql */,
 			);
 			path = graphql;
 			sourceTree = "<group>";
@@ -65,6 +90,7 @@
 		66F96F8E29FAC0D600713B80 = {
 			isa = PBXGroup;
 			children = (
+				79326E022B5F063F00E7D87F /* Packages */,
 				66EEA77E2A13C94400BB8C72 /* graphql */,
 				66F96F9929FAC0D600713B80 /* RocketReserver */,
 				66F96F9829FAC0D600713B80 /* Products */,
@@ -83,16 +109,10 @@
 		66F96F9929FAC0D600713B80 /* RocketReserver */ = {
 			isa = PBXGroup;
 			children = (
+				79326E132B5F20ED00E7D87F /* Model */,
+				79326E112B5F20B600E7D87F /* Networking */,
+				79326E122B5F20C800E7D87F /* Views */,
 				66F96F9A29FAC0D600713B80 /* RocketReserverApp.swift */,
-				66F96F9C29FAC0D600713B80 /* LaunchListView.swift */,
-				66F96FDB29FAE88E00713B80 /* LaunchListViewModel.swift */,
-				66F96FC429FAC7F200713B80 /* LaunchRow.swift */,
-				66F96FC629FACE1A00713B80 /* DetailView.swift */,
-				66F96FDD29FAEDBF00713B80 /* DetailViewModel.swift */,
-				66F96FDF29FAFB9600713B80 /* LoginView.swift */,
-				66F96FE129FB0A9600713B80 /* LoginViewModel.swift */,
-				66F96FE729FC0D7700713B80 /* View+Alert.swift */,
-				66F96FE929FC183200713B80 /* NotificationView.swift */,
 				66F96F9E29FAC0D700713B80 /* Assets.xcassets */,
 				66F96FA029FAC0D700713B80 /* Preview Content */,
 			);
@@ -114,6 +134,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		79326E022B5F063F00E7D87F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				79326E032B5F063F00E7D87F /* RocketReserverAPI */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		79326E112B5F20B600E7D87F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				79326E0A2B5F196900E7D87F /* AuthorizationInterceptor.swift */,
+				79326E0E2B5F1AEA00E7D87F /* NetworkInterceptorProvider.swift */,
+				79326E062B5F079F00E7D87F /* Network.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		79326E122B5F20C800E7D87F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				66F96FC429FAC7F200713B80 /* LaunchRow.swift */,
+				66F96F9C29FAC0D600713B80 /* LaunchListView.swift */,
+				66F96FC629FACE1A00713B80 /* DetailView.swift */,
+				66F96FDF29FAFB9600713B80 /* LoginView.swift */,
+				66F96FE729FC0D7700713B80 /* View+Alert.swift */,
+				66F96FE929FC183200713B80 /* NotificationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79326E132B5F20ED00E7D87F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66F96FDB29FAE88E00713B80 /* LaunchListViewModel.swift */,
+				66F96FDD29FAEDBF00713B80 /* DetailViewModel.swift */,
+				66F96FE129FB0A9600713B80 /* LoginViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +194,9 @@
 			packageProductDependencies = (
 				66F96FD529FADBB700713B80 /* SDWebImageSwiftUI */,
 				66F96FD929FADCC800713B80 /* KeychainSwift */,
+				79326DF92B5F013000E7D87F /* Apollo */,
+				79326DFB2B5F013100E7D87F /* ApolloWebSocket */,
+				79326E042B5F068A00E7D87F /* RocketReserverAPI */,
 			);
 			productName = RocketReserver;
 			productReference = 66F96F9729FAC0D600713B80 /* RocketReserver.app */;
@@ -165,6 +229,7 @@
 			packageReferences = (
 				66F96FD429FADBB700713B80 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				66F96FD829FADCC800713B80 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				79326DF82B5F013000E7D87F /* XCRemoteSwiftPackageReference "apollo-ios" */,
 			);
 			productRefGroup = 66F96F9829FAC0D600713B80 /* Products */;
 			projectDirPath = "";
@@ -198,7 +263,10 @@
 				66F96FEA29FC183200713B80 /* NotificationView.swift in Sources */,
 				66F96FC729FACE1A00713B80 /* DetailView.swift in Sources */,
 				66F96FDC29FAE88E00713B80 /* LaunchListViewModel.swift in Sources */,
+				79326E0B2B5F196900E7D87F /* AuthorizationInterceptor.swift in Sources */,
+				79326E072B5F079F00E7D87F /* Network.swift in Sources */,
 				66F96FE829FC0D7700713B80 /* View+Alert.swift in Sources */,
+				79326E0F2B5F1AEA00E7D87F /* NetworkInterceptorProvider.swift in Sources */,
 				66F96FC529FAC7F200713B80 /* LaunchRow.swift in Sources */,
 				66F96FE029FAFB9600713B80 /* LoginView.swift in Sources */,
 				66F96F9B29FAC0D600713B80 /* RocketReserverApp.swift in Sources */,
@@ -421,6 +489,14 @@
 				version = 18.0.0;
 			};
 		};
+		79326DF82B5F013000E7D87F /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -433,6 +509,20 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 66F96FD829FADCC800713B80 /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
+		};
+		79326DF92B5F013000E7D87F /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79326DF82B5F013000E7D87F /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		79326DFB2B5F013100E7D87F /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79326DF82B5F013000E7D87F /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		79326E042B5F068A00E7D87F /* RocketReserverAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RocketReserverAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

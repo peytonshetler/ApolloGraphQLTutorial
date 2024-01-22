@@ -1,0 +1,17 @@
+# This is the file to update if you want to change the query.
+# Update this query, then run the codegen cli command
+
+query LaunchList($cursor: String) {
+  launches(after: $cursor) {
+    hasMore
+    cursor
+    launches {
+      id
+      site
+      mission {
+        name
+        missionPatch(size: SMALL)
+      }
+    }
+  }
+}
